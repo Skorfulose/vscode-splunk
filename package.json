@@ -4,6 +4,7 @@
 	"description": "Syntax Highlighting for Splunk Configuration Files",
 	"version": "0.0.1",
 	"publisher": "Skorfulose",
+    "license": "GPL-3.0",
 	"engines": {
 		"vscode": "^0.10.10"
 	},
