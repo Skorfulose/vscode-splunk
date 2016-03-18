@@ -1,0 +1,26 @@
+{
+	"name": "splunk",
+	"displayName": "Splunk Configuration Language",
+	"description": "Syntax Highlighting for Splunk Configuration Files",
+	"version": "0.0.1",
+	"publisher": "Skorfulose",
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "splunk",
+			"aliases": ["Splunk", "splunk"],
+			"extensions": [".conf"],
+			"configuration": "./splunk.configuration.json"
+		}],
+		"grammars": [{
+			"language": "splunk",
+			"scopeName": "source.ini",
+			"path": "./syntaxes/splunk.plist"
+		}]
+	}
+}
