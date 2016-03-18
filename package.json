@@ -1,0 +1,31 @@
+{
+	"name": "splunk",
+	"displayName": "Splunk Configuration Language",
+	"description": "Syntax Highlighting for Splunk Configuration Files",
+	"version": "0.0.1",
+	"publisher": "Skorfulose",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Skorfulose/vscode-splunk.git"
+    },
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "splunk",
+			"aliases": ["Splunk", "splunk"],
+			"extensions": [".conf", "conf.example", "conf.default", "conf.spec", "conf.in", "conf.example.in", "conf.spec.in", "cfg.spec.in"],
+			"configuration": "./splunk.configuration.json"
+		}],
+		"grammars": [{
+			"language": "splunk",
+			"scopeName": "source.ini",
+			"path": "./syntaxes/splunk.plist"
+		}]
+	}
+}
