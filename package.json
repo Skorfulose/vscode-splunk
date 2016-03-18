@@ -14,7 +14,7 @@
 		"languages": [{
 			"id": "splunk",
 			"aliases": ["Splunk", "splunk"],
-			"extensions": [".conf"],
+			"extensions": [".conf", "conf.example", "conf.default", "conf.spec", "conf.in", "conf.example.in", "conf.spec.in", "cfg.spec.in"],
 			"configuration": "./splunk.configuration.json"
 		}],
 		"grammars": [{

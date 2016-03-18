@@ -4,7 +4,14 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>conf</string>
+        <string>conf</string>
+        <string>conf.example</string>
+        <string>conf.default</string>
+        <string>conf.spec</string>
+        <string>conf.in</string>
+        <string>conf.example.in</string>
+        <string>conf.spec.in</string>
+        <string>cfg.spec.in</string>
 	</array>
 	<key>keyEquivalent</key>
 	<string>^~I</string>
