@@ -5,6 +5,10 @@
 	"version": "0.0.1",
 	"publisher": "Skorfulose",
     "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Skorfulose/vscode-splunk.git"
+    },
 	"engines": {
 		"vscode": "^0.10.10"
 	},
