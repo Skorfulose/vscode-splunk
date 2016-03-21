@@ -15,6 +15,10 @@
 	"categories": [
 		"Languages"
 	],
+    "galleryBanner": {
+        "color": "#65A637",
+        "theme": "light"
+    },
 	"contributes": {
 		"languages": [{
 			"id": "splunk",
