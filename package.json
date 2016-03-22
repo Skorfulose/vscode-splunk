@@ -13,7 +13,8 @@
 		"vscode": "^0.10.10"
 	},
 	"categories": [
-		"Languages"
+		"Languages",
+        "Other"
 	],
     "galleryBanner": {
         "color": "#65A637",
