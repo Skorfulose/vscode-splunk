@@ -5,6 +5,7 @@
 	"version": "0.0.1",
 	"publisher": "Skorfulose",
     "license": "GPL-3.0",
+    "homepage": "https://github.com/Skorfulose/vscode-splunk",
     "repository": {
         "type": "git",
         "url": "https://github.com/Skorfulose/vscode-splunk.git"
