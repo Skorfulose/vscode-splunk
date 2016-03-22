@@ -1,7 +1,7 @@
 {
 	"name": "splunk",
-	"displayName": "Splunk Configuration Language",
-	"description": "Syntax Highlighting for Splunk Configuration Files",
+	"displayName": "Splunk® Configuration Language",
+	"description": "Syntax Highlighting for Splunk® Configuration Files",
 	"version": "0.0.1",
 	"publisher": "Skorfulose",
     "license": "GPL-3.0",
