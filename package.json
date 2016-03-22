@@ -20,7 +20,20 @@
         "color": "#65A637",
         "theme": "light"
     },
+    "activationEvents": [
+        "onCommand:splunk.search"
+    ],
+    "main": "./out/src/splunk",
 	"contributes": {
+        "commands": [{
+            "command": "splunk.search",
+            "title": "Splunk: Search"
+        }],
+        "keybindings": [{
+            "command": "splunk.search",
+            "key": "ctrl+alt+s",
+            "win": "shift+alt+s"
+        }],
 		"languages": [{
 			"id": "splunk",
 			"aliases": ["Splunk", "splunk"],
