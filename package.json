@@ -1,13 +1,17 @@
 {
 	"name": "splunk",
-	"displayName": "Splunk Configuration Language",
-	"description": "Syntax Highlighting for Splunk Configuration Files",
+	"displayName": "Splunk® Configuration Language",
+	"description": "Syntax Highlighting for Splunk® Configuration Files",
 	"version": "0.0.1",
 	"publisher": "Skorfulose",
     "license": "GPL-3.0",
+    "homepage": "https://github.com/Skorfulose/vscode-splunk",
     "repository": {
         "type": "git",
         "url": "https://github.com/Skorfulose/vscode-splunk.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Skorfulose/vscode-splunk/issues"
     },
 	"engines": {
 		"vscode": "^0.10.10"
