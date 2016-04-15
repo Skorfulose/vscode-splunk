@@ -41,3 +41,6 @@ jspm_packages
 
 # Visual Studio Code TypeScript transpiled output
 out
+
+# Visual Studio Code test files
+.vscode-test
