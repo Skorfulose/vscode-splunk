@@ -20,6 +20,9 @@ export function activate(context: vscode.ExtensionContext) {
 
 		// Display a message box to the user
 		vscode.window.showInformationMessage("Splunk'd!");
+        
+        // Create connection to Splunk server
+        splunk_connect();
 	});
 
 	context.subscriptions.push(disposable);
@@ -27,4 +30,32 @@ export function activate(context: vscode.ExtensionContext) {
 
 // this method is called when your extension is deactivated
 export function deactivate() {
+}
+
+function splunk_connect() {
+    // Create a Service instance and log in 
+    var service = new splunkjs.Service({
+        username:"user",
+        password:"password",
+        scheme:"https",
+        host:"splunk.local",
+        port:"8089",
+        version:"6.4"
+    });
+
+    // Print installed apps to the console to verify login
+    service.apps().fetch(function(err, apps) {
+        if (err) {
+            console.log("Error retrieving apps: ", err);
+            return;
+        }
+
+        console.log("Applications:");
+
+        var appsList = apps.list();
+        for(var i = 0; i < appsList.length; i++) {
+            var app = appsList[i];
+            console.log("  App " + i + ": " + app.name);
+        }
+    });
 }
