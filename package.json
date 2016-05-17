@@ -33,7 +33,7 @@
 		"grammars": [{
 			"language": "splunk",
 			"scopeName": "source.ini",
-			"path": "./syntaxes/splunk.plist"
+			"path": "./syntaxes/splunk.tmLanguage"
 		}]
 	}
 }
