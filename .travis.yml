@@ -1,8 +1,8 @@
 sudo: false
 
 os:
-  - osx
-  - linux
+- osx
+- linux
 
 before_install:
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
@@ -12,8 +12,21 @@ before_install:
     fi
 
 install:
-  - npm install
-  - npm run vscode:prepublish
+- npm install
+- npm run vscode:prepublish
+- npm install -g vsce
+- vsce package
 
 script:
-  - npm test --silent
+- npm test --silent
+
+deploy:
+  provider: releases
+  api_key:
+    secure: q+cukhOsS9rvvMbdDhAglCeLwdg1bBlf4ehW408KrnClfm2+6QCZPNRv+DF9irkOTExg/kKSvA+daPu3gUTABbqEESh0OSO+y4+inpbpOGh4xiD7yv++uws4oHorLNgdEm2FhjuF4DkFgR/Voy0NVtu+x+ObqX+u4eieTuYkRF8ukXfN1RSnKOQKpy60ESl3pTPugeUXeg4Gcg7RSD+xYBUeWrUkBCQr079s+PHN5qPId4RxwefLbjbOFUIKxaoehV2X8VwLF67efX/ISoT+5qbgdqvVLxbjOJjALBs3Jvy+HMKEigTBclaSFAFrIUnegU5XqyeglKGvgulTwzIuFvkIw/VbjQlyGNOdZt5lX2byaCuZNepjpKy+A098UY3sX90KI8k5twWwrb3wR+XceHm2Ox6FgogPE5Y42PPLkWl4X5wcoqHhpKp+Oc+DfBMyfzrOcbNH9QZzqdfEXMIl6h4T0xBJJ0wjH9BHawK0cS5mmf0iKrz6d0I+H7w7KDLPmx4F4I8/CiGkmT+VbZ2Jau5fwFZ1W9mMnGQ5QMaMDFCnGHfsFW9gVlYSZn9FR2HCE+JZd7fLvn1+PkFCZN6kR4WZgnDwGojOWuhD3V4HTZWcUXUJeSamH9u4/ReDfFEk/9KlOQnuinLOlD8v8GPdxVqJFEJA4+dh1/32FVHOlnI=
+  file_glob: true
+  file: "*.vsix"
+  skip_cleanup: true
+  on:
+    repo: Skorfulose/vscode-splunk
+    tags: true
